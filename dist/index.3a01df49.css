@@ -1,0 +1,114 @@
+@import "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Plus Jakarta Sans, sans-serif;
+}
+
+.nav {
+  color: #fff;
+  background-color: #e76835;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25%;
+  display: flex;
+}
+
+.nav > ul {
+  color: #fff;
+  flex-wrap: wrap;
+  list-style-type: none;
+  display: flex;
+}
+
+.nav > ul > li {
+  padding: 0 30px;
+}
+
+.hero {
+  color: #fff;
+  background: url("https://macrofoodz.com.au/wp-content/uploads/2022/08/MFZ-BANNER-1-scaled.jpg");
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  padding: 0 25%;
+  display: flex;
+  position: relative;
+}
+
+.hero:after {
+  content: "";
+  z-index: 0;
+  background-color: #181818e6;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.hero > h1 {
+  z-index: 1;
+  font-size: 3.5rem;
+}
+
+.hero > p {
+  color: #8b8b8b;
+  z-index: 1;
+}
+
+.resturant-card {
+  background-color: #fff;
+  border: 1px solid #bdbdbd;
+  width: 200px;
+  padding: 10px;
+  transition: all .3s;
+}
+
+.resturant-card:hover {
+  box-shadow: 0 0 20px #838383;
+}
+
+.rating {
+  font-weight: bold;
+}
+
+.region {
+  padding: 3px 0;
+}
+
+.resturant-card > img {
+  width: 100%;
+  height: 200px;
+}
+
+.cards-container {
+  background-color: #e4e4e4;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 30px 25%;
+  display: flex;
+}
+
+.search-container {
+  padding: 20px 25%;
+}
+
+.search-container input {
+  border: 1px solid #bebebe;
+  outline: none;
+  width: 20rem;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.search-container > button {
+  border: 1px solid #bebebe;
+  padding: 5px;
+}
+
+.shimmer {
+  padding: 0 25%;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
