@@ -111,4 +111,49 @@
   padding: 0 25%;
 }
 
+.resturantDetails {
+  padding: 0 25%;
+  display: flex;
+}
+
+.detail {
+  padding: 10px;
+}
+
+.detail .id {
+  color: #444;
+}
+
+.detail .restName {
+  padding-bottom: 10px;
+}
+
+.detail img {
+  width: 500px;
+}
+
+.resturantDetailList {
+  padding: 70px 10px 10px;
+}
+
+.resturantDetailList li {
+  color: #575757;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.additionalInfo {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.additionalInfo h3 {
+  color: #3d3d3d;
+  background-color: #ffebdf;
+  border: 1px solid #b1b1b1;
+  border-radius: 50px;
+  margin: 7px 10px 7px 0;
+  padding: 10px;
+}
+
 /*# sourceMappingURL=index.3a01df49.css.map */

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { ResturantList } from "../constants";
 import ResturantCard from "./ResturantCard";
 import {ShimmerPostList, ShimmerTable} from "react-shimmer-effects"
+import {Link} from 'react-router-dom'
 
 function handleFilter(srch, allresturants) {
   let data = allresturants.filter((rest) => {
@@ -29,7 +30,7 @@ let Body = () => {
         
     let json = await data.json();
     console.log(
-      json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
+      json?.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
     );
     setAllResturants(
       json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
@@ -65,7 +66,7 @@ let Body = () => {
       </div>
       <div className="cards-container">
         {filteredResturants.length === 0? <h1>No restaurants found...</h1>:filteredResturants.map((rest) => {
-          return <ResturantCard {...rest.info} key={rest.id} />;
+          return <Link to={"/resturant/"+rest.info.id}> <ResturantCard {...rest.info} key={rest.info.id} /> </Link>;
         })}
       </div>
     </>

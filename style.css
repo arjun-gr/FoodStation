@@ -118,3 +118,50 @@
 .shimmer{
   padding:0 25%;
 }
+
+.resturantDetails{
+  display: flex;
+  padding:0 25%;
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+}
+
+.detail{
+  padding: 10px;
+}
+
+.detail .id{
+  color:rgb(68, 68, 68);
+}
+
+.detail .restName{
+  padding-bottom: 10px;
+}
+
+.detail img{
+  width:500px;
+}
+
+.resturantDetailList{
+  padding:70px 10px 10px 10px;
+}
+
+.resturantDetailList li{
+  margin-bottom: 20px;
+  list-style: none;
+  color:rgb(87, 87, 87);
+}
+
+.additionalInfo{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.additionalInfo h3{
+  border: 1px solid rgb(177, 177, 177);
+  border-radius: 50px;
+  padding:10px;
+  margin:7px 10px 7px 0;
+  background-color: rgb(255, 235, 223);
+  color:rgb(61, 61, 61)
+}
